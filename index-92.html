@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meta do Mês – Telex Centro</title>
+
+<!-- Open Graph / WhatsApp Preview -->
+<meta property="og:type"         content="website">
+<meta property="og:url"          content="https://vivaosom-br.github.io/Metas-Telex/">
+<meta property="og:title"        content="Meta do Mes - Telex Centro">
+<meta property="og:description"  content="Maio 2026 · Acompanhe o placar ao vivo! 70, 85 ou 90 aparelhos auditivos.">
+<meta property="og:image"        content="https://vivaosom-br.github.io/Metas-Telex/preview.png">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale"       content="pt_BR">
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:image"       content="https://vivaosom-br.github.io/Metas-Telex/preview.png">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #FFD700;
+    --gold2: #FFA500;
+    --dark: #0a2a4a;
+    --card1: #0d3158;
+    --card2: #103868;
+    --green: #00e676;
+    --red: #ff1744;
+    --white: #f0f0f0;
+    --pizza: #ff6b35;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--dark);
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Animated background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(255,215,0,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 90%, rgba(255,165,0,0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle linear infinite;
+    opacity: 0;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 0.6; transform: scale(1); }
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 16px 60px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 36px;
+    animation: slideDown 0.8s ease both;
+    background: linear-gradient(145deg, #0f3a6a, #0a2a4a);
+    border-radius: 20px;
+    padding: 24px 20px 20px;
+    border: 1.5px solid rgba(255,255,255,0.06);
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.10);
+    color: rgba(255,255,255,0.90);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 100px;
+    margin-bottom: 14px;
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+
+  .title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.6rem, 8vw, 4.8rem);
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+
+  .title span {
+    color: var(--white);
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  .subtitle {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+    color: rgba(240,240,240,0.55);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  /* Progress bar */
+  .progress-section {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 20px;
+    padding: 28px 28px 20px;
+    margin-bottom: 32px;
+    animation: fadeUp 0.9s 0.2s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .progress-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .progress-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    color: rgba(240,240,240,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .progress-count {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2.4rem;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .progress-count small {
+    font-size: 1rem;
+    color: rgba(240,240,240,0.45);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+  }
+
+  .bar-track {
+    width: 100%;
+    height: 22px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 100px;
+    overflow: visible;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #f0a500, var(--gold), #ffe066);
+    background-size: 200%;
+    animation: shimmer 2s linear infinite;
+    transition: width 1.2s cubic-bezier(.4,0,.2,1);
+    position: relative;
+    min-width: 0;
+  }
+
+  .bar-fill::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 16px var(--gold), 0 0 32px rgba(255,215,0,0.4);
+  }
+
+  /* Milestone markers */
+  .markers {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2px;
+  }
+
+  .marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    color: rgba(240,240,240,0.4);
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.4s;
+  }
+
+  .marker.reached { color: var(--gold); }
+
+  .marker-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    transition: background 0.4s, box-shadow 0.4s;
+  }
+
+  .marker.reached .marker-dot {
+    background: var(--gold);
+    box-shadow: 0 0 8px var(--gold);
+  }
+
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+
+  .card {
+    border-radius: 22px;
+    padding: 28px 24px 24px;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid transparent;
+    transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s, border-color 0.35s;
+    animation: fadeUp 0.9s ease both;
+    cursor: default;
+  }
+
+  .card:nth-child(1) { animation-delay: 0.3s; background: linear-gradient(145deg, #0f3a6a, #0a2a4a); }
+  .card:nth-child(2) { animation-delay: 0.45s; background: linear-gradient(145deg, #113e72, #0d3158); }
+  .card:nth-child(3) { animation-delay: 0.6s; background: linear-gradient(145deg, #103d6e, #0c2f55); }
+
+  .card.locked { filter: grayscale(0.5); opacity: 0.65; }
+
+  .card.unlocked {
+    border-color: var(--gold);
+    box-shadow: 0 0 32px rgba(255,215,0,0.18), 0 8px 32px rgba(0,0,0,0.5);
+    transform: translateY(-4px) scale(1.01);
+    filter: none;
+    opacity: 1;
+  }
+
+  .card.unlocked::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,215,0,0.08), transparent 70%);
+    pointer-events: none;
+  }
+
+  .card-level {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 100px;
+    padding: 4px 14px 4px 8px;
+    margin-bottom: 16px;
+  }
+
+  .level-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .level-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(240,240,240,0.6);
+  }
+
+  .card.unlocked .level-text { color: var(--gold); }
+
+  .card-aparelhos {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 3.6rem;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  .card.unlocked .card-aparelhos { color: var(--gold); text-shadow: 0 0 20px rgba(255,215,0,0.4); }
+
+  .card-unit {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(240,240,240,0.4);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  .divider {
+    height: 1px;
+    background: rgba(255,255,255,0.08);
+    margin-bottom: 16px;
+  }
+
+  .card.unlocked .divider { background: rgba(255,215,0,0.25); }
+
+  .reward {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .reward-icon {
+    font-size: 1.5rem;
+  }
+
+  .reward-value {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .card.unlocked .reward-value { color: var(--gold); }
+
+  .reward-label {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.78rem;
+    color: rgba(240,240,240,0.45);
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+
+  .reward-extra {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    background: rgba(255,107,53,0.12);
+    border: 1px solid rgba(255,107,53,0.3);
+    border-radius: 10px;
+    padding: 8px 12px;
+  }
+
+  .reward-extra span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--pizza);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* Unlock badge */
+  .unlock-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: linear-gradient(135deg, var(--gold), var(--gold2));
+    color: #000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 100px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.4s, transform 0.4s;
+  }
+
+  .card.unlocked .unlock-badge {
+    opacity: 1;
+    transform: scale(1);
+    animation: pulse-badge 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-badge {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,215,0,0.5); }
+    50% { box-shadow: 0 0 0 6px rgba(255,215,0,0); }
+  }
+
+  /* Confetti celebration */
+  .confetti-piece {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -20px;
+    border-radius: 2px;
+    animation: confettiFall linear forwards;
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  @keyframes confettiFall {
+    0% { transform: translateY(0) rotateZ(0deg); opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translateY(105vh) rotateZ(720deg); opacity: 0; }
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    animation: fadeUp 1s 0.8s ease both;
+  }
+
+  /* Celebration overlay */
+  .celebration {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .celebration.active { opacity: 1; pointer-events: auto; }
+
+  .celebration-inner {
+    text-align: center;
+    animation: popIn 0.5s cubic-bezier(.2,1.5,.4,1) both;
+    background: rgba(10,10,15,0.93);
+    border: 2px solid var(--gold);
+    border-radius: 28px;
+    padding: 48px 56px;
+    box-shadow: 0 0 80px rgba(255,215,0,0.25);
+    max-width: 90vw;
+  }
+
+  @keyframes popIn {
+    from { transform: scale(0.6); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .celebration-emoji { font-size: 4rem; margin-bottom: 12px; }
+
+  .celebration-title {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2.4rem;
+    color: var(--gold);
+    text-shadow: 0 0 24px rgba(255,215,0,0.6);
+    margin-bottom: 8px;
+  }
+
+  .celebration-sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    color: rgba(240,240,240,0.6);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .celebration-close {
+    background: linear-gradient(135deg, var(--gold), var(--gold2));
+    border: none;
+    border-radius: 100px;
+    color: #000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .celebration-close:hover { transform: scale(1.05); }
+
+  @media (max-width: 520px) {
+    .cards { grid-template-columns: 1fr; }
+    .card-aparelhos { font-size: 2.8rem; }
+    .celebration-inner { padding: 36px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Stars bg -->
+<div class="stars" id="stars"></div>
+
+<!-- Celebration -->
+<div class="celebration" id="celebration">
+  <div class="celebration-inner">
+    <div class="celebration-emoji" id="cel-emoji">🏆</div>
+    <div class="celebration-title" id="cel-title">Meta Batida!</div>
+    <div class="celebration-sub" id="cel-sub">Parabéns, equipe!</div>
+    <button class="celebration-close" onclick="closeCelebration()">Fechar</button>
+  </div>
+</div>
+
+<div class="wrapper">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="badge">🦻🏻 Telex Centro</div>
+    <h1 class="title">Meta do Mês</h1>
+    <p class="subtitle">Maio 2026</p>
+  </header>
+
+
+  <!-- Cards -->
+  <div class="cards">
+
+    <!-- Card 1: 70 -->
+    <div class="card locked" id="card-70">
+      <div class="unlock-badge">✓ Desbloqueado</div>
+      <div class="card-level">
+        <span class="level-icon">🥉</span>
+        <span class="level-text">Nível 1</span>
+      </div>
+      <div class="card-aparelhos">70</div>
+      <div class="card-unit">Aparelhos Auditivos</div>
+      <div class="divider"></div>
+      <div class="reward">
+        <div class="reward-icon">💰</div>
+        <div>
+          <div class="reward-value">R$ 1.000,00</div>
+          <div class="reward-label">Premiação</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: 85 -->
+    <div class="card locked" id="card-85">
+      <div class="unlock-badge">✓ Desbloqueado</div>
+      <div class="card-level">
+        <span class="level-icon">🥈</span>
+        <span class="level-text">Nível 2</span>
+      </div>
+      <div class="card-aparelhos">85</div>
+      <div class="card-unit">Aparelhos Auditivos</div>
+      <div class="divider"></div>
+      <div class="reward">
+        <div class="reward-icon">💰</div>
+        <div>
+          <div class="reward-value">R$ 1.500,00</div>
+          <div class="reward-label">Premiação</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: 90 -->
+    <div class="card locked" id="card-90">
+      <div class="unlock-badge">✓ Desbloqueado</div>
+      <div class="card-level">
+        <span class="level-icon">🥇</span>
+        <span class="level-text">Nível 3</span>
+      </div>
+      <div class="card-aparelhos">90</div>
+      <div class="card-unit">Aparelhos Auditivos</div>
+      <div class="divider"></div>
+      <div class="reward">
+        <div class="reward-icon">💰</div>
+        <div>
+          <div class="reward-value">R$ 1.500,00</div>
+          <div class="reward-label">Premiação</div>
+        </div>
+      </div>
+      <div class="reward-extra">
+        <span>🍕</span>
+        <span>+ Pizzaria Cabeça</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">Telex Centro · Mês de Maio 2026 · Bora bater meta! 🚀</div>
+</div>
+
+<script>
+  // Stars
+  const starsEl = document.getElementById('stars');
+  for (let i = 0; i < 60; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 2.5 + 0.5;
+    s.style.cssText = `
+      width:${size}px; height:${size}px;
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      animation-duration:${Math.random()*4+2}s;
+      animation-delay:${Math.random()*5}s;
+    `;
+    starsEl.appendChild(s);
+  }
+
+  // State
+  let current = 0;
+  const MAX = 90;
+  let prevUnlocked = { 70: false, 85: false, 90: false };
+
+  const barFill = document.getElementById('bar-fill');
+
+  function update(val) {
+    current = Math.max(0, Math.min(999, val));
+    const pct = Math.min((current / MAX) * 100, 100);
+
+    if (barFill) barFill.style.width = pct + '%';
+
+    // Markers (safe check)
+    const m0 = document.getElementById('m0');
+    const m75 = document.getElementById('m75');
+    const m85 = document.getElementById('m85');
+    const m90 = document.getElementById('m90');
+    if (m0) m0.classList.toggle('reached', current >= 0);
+    if (m75) m75.classList.toggle('reached', current >= 70);
+    if (m85) m85.classList.toggle('reached', current >= 85);
+    if (m90) m90.classList.toggle('reached', current >= 90);
+
+    // Cards
+    checkCard('card-70', 70, current >= 70, '🥉 Nível 1!', 'R$ 1.000,00 conquistado!', '🎉');
+    checkCard('card-85', 85, current >= 85, '🥈 Nível 2!', 'R$ 1.500,00 conquistado!', '🔥');
+    checkCard('card-90', 90, current >= 90, '🥇 Meta Máxima!', 'R$ 1.500,00 + 🍕 Pizzaria Cabeça!', '🏆');
+  }
+
+  function checkCard(id, threshold, unlocked, title, sub, emoji) {
+    const card = document.getElementById(id);
+    const wasUnlocked = prevUnlocked[threshold];
+    card.classList.toggle('unlocked', unlocked);
+    card.classList.toggle('locked', !unlocked);
+    if (unlocked && !wasUnlocked) {
+      prevUnlocked[threshold] = true;
+      triggerCelebration(emoji, title, sub);
+      launchConfetti();
+    } else if (!unlocked) {
+      prevUnlocked[threshold] = false;
+    }
+  }
+
+  function triggerCelebration(emoji, title, sub) {
+    document.getElementById('cel-emoji').textContent = emoji;
+    document.getElementById('cel-title').textContent = title;
+    document.getElementById('cel-sub').textContent = sub;
+    document.getElementById('celebration').classList.add('active');
+  }
+
+  function closeCelebration() {
+    document.getElementById('celebration').classList.remove('active');
+  }
+
+  function launchConfetti() {
+    const colors = ['#FFD700','#FFA500','#ff6b35','#fff','#ffe066','#00e676'];
+    for (let i = 0; i < 60; i++) {
+      const el = document.createElement('div');
+      el.className = 'confetti-piece';
+      el.style.cssText = `
+        left:${Math.random()*100}vw;
+        background:${colors[Math.floor(Math.random()*colors.length)]};
+        animation-duration:${Math.random()*1.5+1}s;
+        animation-delay:${Math.random()*0.6}s;
+        border-radius:${Math.random()>0.5?'50%':'2px'};
+        width:${Math.random()*10+6}px;
+        height:${Math.random()*10+6}px;
+      `;
+      document.body.appendChild(el);
+      el.addEventListener('animationend', () => el.remove());
+    }
+  }
+
+  // Init
+  update(0);
+</script>
+</body>
+</html>
